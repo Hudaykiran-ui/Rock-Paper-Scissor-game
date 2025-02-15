@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.container{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.Rps-main{
+ text-align: center;
+}
+
+.wrapper{
+  margin: 20px 0;
+}
+
+h3{
+  color: white;
+  text-decoration:underline;
+}
+
+.btn-r-css img,
+.btn-p-css img,
+.btn-s-css img
+{
+ height:50px;
+ width: 50px;
+}
+
+.btn-r-css,
+.btn-p-css,
+.btn-s-css{
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  padding: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.move-icon{
+  height:50px;
+  width: 50px;
+}
+
+.js-moves{
+  margin: 15px 0;
+}
+
+/*........................................................ reset button css............................................................*/
+
+.main-btn-con{
+  display: flex;
+  gap:10px;
+  margin: 10px 0;
+}
+
+.reset-button {
+  position: relative;
+  border-radius: 6px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cc0000;
+  background-color: #e50000;
+  overflow: hidden;
+}
+
+.reset-button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.reset-button .button__text {
+  transform: translateX(18px);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reset-button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #cc0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-button .svg {
+  width: 20px;
+}
+
+.reset-button:hover {
+  background: #cc0000;
+}
+
+.reset-button:hover .button__text {
+  color: transparent;
+}
+
+.reset-button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.reset-button:active .button__icon {
+  background-color: #b20000;
+}
+
+.reset-button:active {
+  border: 1px solid #b20000;
+}
+
+/*....................................................... auto play button css..........................................................*/
+
+.auto-button{
+  padding: 11px 45px;
+  border-radius: 5px;
+  border: 1px solid #cc0000;
+  background-color: #e50000;
+  color: white; 
+  font-size: 14px;
+  font-weight:600;
+  cursor: pointer;
+}
+.auto-button:hover{
+  background: #cc0000;
+  padding: 12px 46px;
+  transition: all 0.3s;
+}
+
+/*.............................................. showConfrimation reset button css......................................................*/
+
+.reset-yes-css,
+.reset-no-css
+{
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #cc0000;
+  background-color: #e50000;
+  color: white; 
+  font-size: 14px;
+  font-weight:600;
+  cursor: pointer;
+}
+.reset-yes-css:hover,
+.reset-no-css:hover{
+  padding: 6px 21px;
+  background: #cc0000;
+  transition: all 0.3s;
+}
